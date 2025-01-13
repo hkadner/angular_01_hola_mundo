@@ -8,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrl: './hola-mundo.component.css'
 })
 export class HolaMundoComponent {
-
+  public nombre: string = 'Pensando...';
+  constructor() {
+    setTimeout(() => {
+      this.nombre = 'Ramiro';
+    }, 3000);
+  }
 }
